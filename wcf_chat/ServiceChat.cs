@@ -39,7 +39,7 @@ namespace wcf_chat
             nextId++;
 
             // Уведомляем всех пользователей о подключении нового участника
-            SendMsg(": " + user.Name + " подключился к чату!", 0);
+            SendMsg(": " + user.Name + " вошел!", 0);
             users.Add(user);
             return user.ID;
         }
